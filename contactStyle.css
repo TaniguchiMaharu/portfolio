@@ -1,0 +1,27 @@
+
+body{
+    text-align: center;
+    font-family: 'Orbitron', 'M PLUS 1p', sans-serif;
+    background-color: #eaeaff;
+    color: #14132e
+}
+h3{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Orbitron', 'M PLUS 1p', sans-serif;
+    color: #e92efb;
+}
+footer{
+    text-align: left;
+    background-color: #797991;
+    margin: 0px;
+    border: 10px;
+    padding: 10px;
+}
+a{
+    color: #ff79ff;
+    text-decoration: none;
+}
+a:hover{
+    color: #7fff00;
+}

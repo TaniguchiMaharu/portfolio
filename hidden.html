@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 検索除け -->
+        <meta NAME=”ROBOTS” CONTENT=”NOINDEX,NOFOLLOW,NOARCHIVE”>
+        
+        <meta charset="utf-8">
+        <title>隠しページ</title>
+        <link rel="stylesheet" type="text/css" href="siteADV.css">
+        <!--さわらび明朝-->
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>地獄に来てしまった……<br>"三宝"を手に入れれば現世に戻れるようだ。</h1>
+        <!--Video 自動再生属性-->
+        <video id="bg" muted src="img/back.mp4" autoplay loop></video>
+
+        <!--スタートボタン-->
+        <button type="button" id="start" class="startButton" onclick="addEventListener('load', main(), false); ">進もう。</button>
+        <p class="warning" id="warn">ボタンをクリックして開始<br>(※音が出ます)</p>
+
+    <var class="canvas-wrapper">
+        <!--記述が上の物が上のレイヤーになる…はずが、逆っぽい？ので-->
+        <!--背景キャンバス描画-->
+        <canvas id="back"></canvas>
+        <!--地面用キャンバス描画-->
+        <canvas id="way"></canvas>
+        <!--アイテム用キャンバス-->
+        <canvas id="item"></canvas>
+        <!--キャラ用キャンバス-->
+        <canvas id="player"></canvas>
+        <!--インフォメーション用キャンバス描画-->
+        <canvas id="info"></canvas>
+    </var>
+        <!--ここからゲーム処理-->
+        <script type="text/javascript" src="hiddenGame.js"></script>
+        
+    </body>
+    <footer>
+        クレジット<br>
+        <!-- BGM:<a href="https://maoudamashii.jokersounds.com/">魔王魂</a>様<br> -->
+        SE:<a href='http://www.kurage-kosho.info/'>くらげ工匠</a>様<br>
+        <a href="index.html" id='top'>TOPへ戻る</a></footer>
+</html>
