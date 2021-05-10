@@ -1,0 +1,102 @@
+
+body{
+     /*いい感じの背景イラスト*/
+     background-image: url("img/top.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+   
+    /*google web fontsの利用*/
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    text-align: center;
+    color: #e92efb;
+    
+}
+a:link{
+    color: #660023;
+}
+a:visited{
+    color: #ff2079;
+}
+a:hover{
+    color: #dd0034;
+}
+
+
+h1{
+    font-family: 'Cute Font', cursive;
+    margin: 0%;
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: #04005e;
+    width:400px;
+    height: 100px;
+    background-color: #ff2079;
+    float: left;
+}
+
+.mainMenu{
+    margin: 0px;
+    background-color: #ff2079;
+    /*横並びのリストを作る*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Share Tech Mono', 'Kosugi Maru', monospace, sans-serif;
+    font-weight: 900;  
+    height: 100px;
+    font-size: 25px;  
+}
+
+/*　リストの書式　*/
+li.mainMenu{
+    /*マスの大きさ*/
+    text-align: right;
+    list-style: none;
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #04005e;
+}
+a.mainMenu{
+    background-color: #04005e;
+    height: 50px;
+    line-height: 50px;
+    color: #e92efb;
+    /*リンクの下の線を消す*/
+    text-decoration: none;
+}
+
+.bg{
+    background-color: #14132e;
+    margin: 0%;
+    padding: 100px;
+
+}
+
+.hiddenLink{
+    text-align: left;
+    line-height: auto;
+    background-color: #14132e;
+    margin: 0%;
+     font-family: 'Sawarabi Mincho', sans-serif;
+    
+    color: #14132e;
+    opacity: 0.5;
+}
+a.hiddenLink:link{
+    color: #14132e;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+a.hiddenLink:visited{
+    color: #ff1e00;
+}
+
+a.hiddenLink:hover{
+    color: #dfce00;
+}

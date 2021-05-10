@@ -1,0 +1,71 @@
+body{
+    background-color: #dfdddf;
+    color: #c4b4ff;
+    
+}
+h1{
+    background: #bdbdfd;
+    color: #00218a;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+a{
+    color:     #a871c0;
+}
+a:hover{
+    color: #ff2079;
+}
+.worksList{
+    font-family: 'Share Tech Mono', 'Kosugi Maru', monospace, sans-serif;
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    width: auto;
+    height: 500px;
+}
+.java{
+    background-image: linear-gradient(to bottom, rgba(166, 164, 204, 0.9),rgba(200,20,126,0.3)), url("img/scshot_hilow.png");
+    background-repeat: no-repeat;
+    width: 519px;
+    height: 234px;
+    margin: 50px;
+}
+.htmlcss{
+    background-color: #00218a;
+    margin: 50px;
+    width: 519px;
+    height: 234px;
+    margin: 50px;
+
+}
+
+.cSharp{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(6, 76, 88, 0.5)), url("img/scShot_escapeGame.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 519px;
+    height: 234px;
+    margin: 50px;
+}
+
+.unity{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(26, 51, 119, 0.5)), url("img/scShot_unityAction.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 519px;
+    height: 234px;
+    margin: 50px;
+}
+
+.hidden{
+    color: #00218a;
+}
+.hidden:hover{
+    color:#7ddd00
+}
+footer{
+    font-family: 'Share Tech Mono', 'Kosugi Maru', monospace, sans-serif;
+}

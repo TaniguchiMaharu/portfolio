@@ -1,0 +1,95 @@
+body{
+    font-family: 'Sawarabi Mincho', sans-serif;
+    background-color: red;
+}
+video{
+    /*canvasのソース用に読み込んでいるので絶対座標配置にして非表示にする*/
+    position: absolute;
+    opacity: 0;
+    /* サイズ調整
+    width: 640px;
+    height: 360px; */
+}
+/*スタートボタンをcanvasの上に置きたい*/
+.startButton{
+    display: inline-block; /*inlineだとアニメーションが効かない？*/
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+    /*canvasの上に描画*/
+    z-index: 2;
+    size: 50px;
+    color: white;
+    letter-spacing: -5px;
+    background-color: rgba(73, 13, 68, 0.7);
+}
+.startButton:hover{
+    display: inline-block;
+    background-color: rgba(131,28,41,0.7);
+    animation-name: buru;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes buru{
+    /*アニメーションの動きの指定*/
+    0%{ transform: translate(0px, 0px) rotateZ(0dig)}
+    25%{ transform: translate(2px, 2px) rotateZ(1dig)}
+    50%{ transform: translate(0px, 2px) rotateZ(0dig)}
+    75%{ transform: translate(2px, 0px) rotateZ(-1dig)}
+    100%{ transform: translate(0px, 0px) rotateZ(0dig)}
+}
+
+.warning{
+    /*音が出ますの勧告 ボタンの下に書く*/
+    z-index: 1;
+
+    background-color: rgba(255,255,255,0.9);
+    color: #751500;
+    position: absolute;
+    top: 360px;
+    padding-left: 170px;
+    padding-right: 170px;
+    font-size: 25px;
+    justify-content: center;
+}
+.warning:hover{
+    display: table-cell;
+    animation-name: buru;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+/*キャンバスをレイヤーのように重ねて表示して画像背景にできるようにする*/
+.canvas-wrapper{
+    
+    position: relative;
+}
+.canvas-wrapper canvas{
+    /*div class='canvas-wrapper'内のキャンバスは全部同じ位置に*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer{
+    position: relative;
+    top: 500px;
+    margin: auto;
+}
+/*没処理*/
+/*背景*/
+/* #back{
+    background-color: black ;
+    width: 640px;
+    height: 360px;  
+} */
+/* #player{
+    background-color: aqua;
+    width:100px;
+    height: 100px;
+} */
